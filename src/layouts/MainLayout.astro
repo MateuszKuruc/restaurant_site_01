@@ -1,9 +1,8 @@
 ---
 import NavBar from '../components/NavBar.astro';
 import Footer from "../components/Footer.astro"
-// import Reviews from "../components/Reviews.astro"
 import Map from "../components/Map.astro"
-// import CTA from "../components/CTA.astro"
+import ContactForm from "../components/ContactForm.astro"
 
 interface Props {
 	title: string;
@@ -43,8 +42,7 @@ const { title } = Astro.props;
 	<body>
         <NavBar />
 		<slot />
-        <!-- <CTA /> -->
-        <!-- <Reviews /> -->
+        <ContactForm />
         <Map />
         <Footer />
 	</body>
